@@ -15,11 +15,15 @@ jobs:
       - name: 'Generate shell files'
         run: make generate
 
+      - name: 'Generate LS_COLORS_TRUE'
+        run: |
+          python3 ansi_256_to_rgb.py LS_COLORS > LS_COLORS_TRUE
+
       - name: 'Commit generated files'
         if: ${{ success() }}
         run: |
           git config user.name 'github-actions'
           git config user.email 'github-actions@github.com'
-          git add lscolors.sh lscolors.csh
-          git commit -m "Update shell files" || echo "No changes to commit"
+          git add lscolors.sh lscolors.csh LS_COLORS_TRUE
+          git commit -m "Update generated files including LS_COLORS_TRUE" || echo "No changes to commit"
           git push

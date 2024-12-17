@@ -4,6 +4,40 @@
 
 :information_source: This is a fork of [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS). It adds the [`ansi_256_to_rgb.py`](https://github.com/alberti42/LS_COLORS_TRUE_COLORS/blob/master/ansi_256_to_rgb.py) script and a GitHub action that automatically generates `LS_COLORS_TRUE` from `LS_COLORS`. True colours (24bit encoding) may be preferred for modern terminal emulators that support 24bit colours.
 
+If you use `zinit` as your plugin loader for `zsh`, you can load it with this instructions in your `.zshrc` file:
+
+```zsh
+# LS_COLORS theme - download the default profile
+zinit wait for light-mode lucid \
+    atclone'
+      [[ -z ${commands[dircolors]} ]] && local P=${${(M)OSTYPE##darwin}:+g}
+      ${P}sed -i  "/^DIR\s/c\DIR 38;2;104;114;255;1" LS_COLORS_TRUE   # adjusts the color of directories
+      ${P}sed -i "/^LINK\s/c\LINK 1;36" LS_COLORS_TRUE   # adjusts the color of soft links (alternative -> TARGET)
+      ${P}dircolors -b LS_COLORS >! src_colors.zsh
+      ${P}dircolors -b LS_COLORS_TRUE >! src_true_colors.zsh
+      # For BSD/macOS, include the following two lines
+      echo -e "LSCOLORS=exfxcxdxbxegedabagacad\nexport LSCOLORS" >> src_colors.zsh
+      echo -e "LSCOLORS=exfxcxdxbxegedabagacad\nexport LSCOLORS" >> src_true_colors.zsh
+    ' \
+    atinit'
+      if [[ "$COLORTERM" == *truecolor* || "$COLORTERM" == *24bit* ]]; then
+            # this terminal supports truecolor
+            source src_true_colors.zsh
+        else
+            # Truecolor is not supported
+            src_true_colors.zsh
+        fi
+    ' \
+    atpull'%atclone' \
+    git \
+    id-as'LS_COLORS_TRUE_COLORS' \
+    lucid \
+    nocompile'!' \
+    reset @alberti42/LS_COLORS_TRUE_COLORS
+```
+
+---
+
 <!-- mdformat-toc start --slug=github --no-anchors --maxlevel=3 --minlevel=1 -->
 
 - [LS_COLORS](#ls_colors)

@@ -1,0 +1,750 @@
+#                                    LS_COLORS
+# Maintainers: Magnus Woldrich <m@japh.se>,
+#              Ryan Delaney <ryan.patrick.delaney@protonmail.com>
+#         URL: https://github.com/trapd00r/LS_COLORS
+#
+#   This is a collection of extension:color mappings, suitable to use as your
+#   LS_COLORS environment variable. Most of them use the extended color map,
+#   described in the ECMA-48 document; in other words, you'll need a terminal
+#   with capabilities of displaying 256 colors.
+#
+#   As of this writing, over 500 different filetypes/extensions are supported.
+#   That's indeed a lot of extensions, but there's a lot more! Therefore I need
+#   your help.
+#
+#   Fork this project on github, add the extensions you are missing, and send me
+#   a pull request.
+#
+#   For files that usually end up next to each other, like html, css and js,
+#   try to pick colors that fit nicely together. Filetypes with multiple
+#   possible extensions, like htm and html, should have the same color.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the Perl Artistic License for more details.
+#
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the Perl Artistic License as published by the Perl Foundation,
+# either version 1.0 of the License, or (at your option) any later version.
+#
+# You should have received a copy of the Perl Artistic License along
+# with this program.  If not, see <http://www.perlfoundation.org/artistic_license_1_0>.
+
+# "NORMAL don't reset the bold attribute -
+# https://github.com/trapd00r/LS_COLORS/issues/11
+#NORMAL               38;5;254
+
+BLK                   38;2;51;102;204             # core
+CAPABILITY            38;2;0;0;51             # core
+CHR                   38;2;102;204;51;1          # core
+DIR                   38;2;0;102;102             # core
+DOOR                  38;2;153;0;153            # core
+EXEC                  38;2;255;102;0;1          # core
+FIFO                  38;2;153;0;102            # core
+FILE                  0                   # core
+LINK                  target              # core
+MULTIHARDLINK         38;2;255;204;102;1          # core
+NORMAL                0                   # core
+ORPHAN                48;5;196;38;2;8;8;8;1 # core
+OTHER_WRITABLE        38;2;255;204;0;1          # core
+SETGID                48;5;3;38;2;0;0;0       # core
+SETUID                38;2;255;204;0;1;3;100;1  # core
+SOCK                  38;2;255;0;51            # core
+STICKY                38;2;51;255;204;48;5;234    # core
+STICKY_OTHER_WRITABLE 48;5;235;38;2;153;102;153;3 # core
+*LS_COLORS 48;5;89;38;2;255;0;51;1;3;4;7       # :-)
+.txt                  38;2;218;218;218            # Plain-text
+*README               38;2;255;204;0;1          # Documentation
+*README.rst           38;2;255;204;0;1          # Documentation
+*README.md            38;2;255;204;0;1          # Documentation
+*LICENSE              38;2;255;204;0;1          # Documentation
+*LICENSE.md           38;2;255;204;0;1          # Documentation
+*COPYING              38;2;255;204;0;1          # Documentation
+*INSTALL              38;2;255;204;0;1          # Documentation
+*COPYRIGHT            38;2;255;204;0;1          # Documentation
+*AUTHORS              38;2;255;204;0;1          # Documentation
+*HISTORY              38;2;255;204;0;1          # Documentation
+*CONTRIBUTORS         38;2;255;204;0;1          # Documentation
+*CONTRIBUTING         38;2;255;204;0;1          # Documentation
+*CONTRIBUTING.md      38;2;255;204;0;1          # Documentation
+*CHANGELOG            38;2;255;204;0;1          # Documentation
+*CHANGELOG.md         38;2;255;204;0;1          # Documentation
+*CODEOWNERS           38;2;255;204;0;1          # Documentation
+*PATENTS              38;2;255;204;0;1          # Documentation
+*VERSION              38;2;255;204;0;1          # Documentation
+*NOTICE               38;2;255;204;0;1          # Documentation
+*CHANGES              38;2;255;204;0;1          # Documentation
+.log                  38;2;204;255;0            # Logs
+.adoc                 38;2;204;204;0            # Markup
+.asciidoc             38;2;204;204;0            # Markup
+.etx                  38;2;204;204;0            # Markup
+.info                 38;2;204;204;0            # Markup
+.markdown             38;2;204;204;0            # Markup
+.md                   38;2;204;204;0            # Markup
+.mkd                  38;2;204;204;0            # Markup
+.mdx                  38;2;204;204;0            # Markup
+.nfo                  38;2;204;204;0            # Markup
+.org                  38;2;204;204;0            # Markup
+.norg                 38;2;204;204;0            # Markup
+.pod                  38;2;204;204;0            # Markup
+.rst                  38;2;204;204;0            # Markup
+.tex                  38;2;204;204;0            # Markup
+.textile              38;2;204;204;0            # Markup
+.bib                  38;2;204;153;0            # Data store # non-relational
+.json                 38;2;204;153;0            # Data store # non-relational
+.jsonc                38;2;204;153;0            # Data store # non-relational
+.json5                38;2;204;153;0            # Data store # non-relational
+.hjson                38;2;204;153;0            # Data store # non-relational
+.jsonl                38;2;204;153;0            # Data store # non-relational
+.jsonnet              38;2;204;153;0            # Data store # non-relational
+.libsonnet            38;2;153;153;0            # Data store # non-relational
+.ndjson               38;2;204;153;0            # Data store # non-relational
+.msg                  38;2;204;153;0            # Data store # non-relational
+.pgn                  38;2;204;153;0            # Data store # non-relational
+.rss                  38;2;204;153;0            # Data store # non-relational
+.xml                  38;2;204;153;0            # Data store # non-relational
+.fxml                 38;2;204;153;0            # Data store # non-relational
+.toml                 38;2;204;153;0            # Data store # non-relational
+.yaml                 38;2;204;153;0            # Data store # non-relational
+.yml                  38;2;204;153;0            # Data store # non-relational
+.RData                38;2;204;153;0            # Data store # non-relational
+.rdata                38;2;204;153;0            # Data store # non-relational
+.xsd                  38;2;204;153;0            # Data store # non-relational
+.dtd                  38;2;204;153;0            # Data store # non-relational
+.sgml                 38;2;204;153;0            # Data store # non-relational
+.rng                  38;2;204;153;0            # Data store # non-relational
+.rnc                  38;2;204;153;0            # Data store # non-relational
+.accdb                38;2;51;51;102             # Data store # MS Access
+.accde                38;2;51;51;102             # Data store # MS Access
+.accdr                38;2;51;51;102             # Data store # MS Access
+.accdt                38;2;51;51;102             # Data store # MS Access
+.db                   38;2;51;51;102             # Data store
+.fmp12                38;2;51;51;102             # Data store
+.fp7                  38;2;51;51;102             # Data store
+.localstorage         38;2;51;51;102             # Data store
+.mdb                  38;2;51;51;102             # Data store
+.mde                  38;2;51;51;102             # Data store
+.sqlite               38;2;51;51;102             # Data store # SQLite
+.typelib              38;2;51;51;102             # Data store
+.nc                   38;2;51;51;102             # Data store # NetCDF
+.azw                  38;2;153;102;255            # Documents # binary
+.azw3                 38;2;153;102;255            # Documents # binary
+.cbr                  38;2;153;102;255            # Documents # binary
+.cbz                  38;2;153;102;255            # Documents # binary
+.chm                  38;2;153;102;255            # Documents # binary
+.djvu                 38;2;153;102;255            # Documents # binary
+.fb2                  38;2;153;102;255            # Documents # binary
+.pdf                  38;2;153;102;255            # Documents # binary
+.PDF                  38;2;153;102;255            # Documents # binary
+.mobi                 38;2;153;102;255            # Documents # binary
+.epub                 38;2;153;102;255            # Documents # binary
+.docm                 38;2;102;153;255;4          # Documents # with macros
+.doc                  38;2;102;153;255            # Documents
+.docx                 38;2;102;153;255            # Documents
+.odb                  38;2;102;153;255            # Documents
+.odt                  38;2;102;153;255            # Documents
+.rtf                  38;2;102;153;255            # Documents
+.pages                38;2;102;153;255            # Documents
+.odp                  38;2;204;51;0            # Presentation
+.pps                  38;2;204;51;0            # Presentation
+.ppt                  38;2;204;51;0            # Presentation
+.pptx                 38;2;204;51;0            # Presentation
+.ppts                 38;2;204;51;0            # Presentation
+.pptxm                38;2;204;51;0;4          # Presentation (with macros)
+.pptsm                38;2;204;51;0;4          # Presentation (with macros)
+.prisma               38;2;255;204;102            # Prisma Schema/Config
+.csv                  38;2;51;204;102             # Spreadsheet (plain text)
+.tsv                  38;2;51;204;102             # Spreadsheet (plain text)
+.numbers              38;2;102;204;0            # Spreadsheet
+.ods                  38;2;102;204;0            # Spreadsheet
+.xla                  38;2;51;204;0             # Spreadsheet
+.xls                  38;2;102;204;0            # Spreadsheet
+.xlsx                 38;2;102;204;0            # Spreadsheet
+.xlsxm                38;2;102;204;0;4          # Spreadsheet (with macros)
+.xltm                 38;2;51;153;153;4           # Spreadsheet (with macros)
+.xltx                 38;2;51;153;153             # Spreadsheet (with macros)
+.key                  38;2;204;51;0            # License keys
+*config               1                   # Configs
+*cfg                  1                   # Configs
+*conf                 1                   # Configs
+*rc                   1                   # Configs
+*authorized_keys      1                   # Configs
+*known_hosts          1                   # Configs
+.ini                  1                   # Configs
+.plist                1                   # Configs
+.profile              1                   # Configs
+.bash_profile         1                   # Configs
+.bash_login           1                   # Configs
+.bash_logout          1                   # Configs
+.zshenv               1                   # Configs
+.zprofile             1                   # Configs
+.zlogin               1                   # Configs
+.zlogout              1                   # Configs
+.viminfo              1                   # Configs
+.pcf                  1                   # Configs
+.psf                  1                   # Configs
+.hidden-color-scheme  1                   # Configs
+.hidden-tmTheme       1                   # Configs
+.last-run             1                   # Configs
+.merged-ca-bundle     1                   # Configs
+.sublime-build        1                   # Configs
+.sublime-commands     1                   # Configs
+.sublime-keymap       1                   # Configs
+.sublime-settings     1                   # Configs
+.sublime-snippet      1                   # Configs
+.sublime-project      1                   # Configs
+.sublime-workspace    1                   # Configs
+.tmTheme              1                   # Configs
+.user-ca-bundle       1                   # Configs
+.rstheme              1                   # Configs
+.epf                  1                   # Configs
+.git                  38;2;255;0;51            # Version control
+.github               38;2;255;0;51            # Version control
+.gitignore            38;2;88;88;88            # Version control
+.gitattributes        38;2;88;88;88            # Version control
+.gitmodules           38;2;88;88;88            # Version control
+.awk                  38;2;204;102;0            # Code (shell)
+.bash                 38;2;204;102;0            # Code (shell)
+.bat                  38;2;204;102;0            # Code (shell)
+.BAT                  38;2;204;102;0            # Code (shell)
+.sed                  38;2;204;102;0            # Code (shell)
+.sh                   38;2;204;102;0            # Code (shell)
+.zsh                  38;2;204;102;0            # Code (shell)
+.fish                 38;2;204;102;0            # Code (shell)
+.vim                  38;2;204;102;0            # Code (shell)
+.kak                  38;2;204;102;0            # Code (shell)
+.ahk                  38;2;0;204;51             # Code (interpreted) (AutoHotKey)
+.py                   38;2;0;204;51             # Code (interpreted) (Python)
+.ipynb                38;2;0;204;51             # Code (interpreted) (Python)
+.xsh                  38;2;0;204;51             # Code (interpreted) (xonsh)
+.rb                   38;2;0;204;51             # Code (interpreted) (ruby)
+.gemspec              38;2;0;204;51             # Code (interpreted) (ruby)
+.pl                   38;2;255;102;0            # Code (interpreted) (Perl)
+.PL                   38;2;204;0;0            # Code (interpreted) (Perl)
+.pm                   38;2;255;51;51            # Code (interpreted) (Perl)
+.t                    38;2;102;204;102            # Code (interpreted) (Perl)
+.msql                 38;2;255;204;102            # Code (SQL)
+.mysql                38;2;255;204;102            # Code (SQL)
+.prql                 38;2;255;204;102            # Code (SQL)
+.pgsql                38;2;255;204;102            # Code (SQL)
+.sql                  38;2;255;204;102            # Code (SQL)
+.tcl                  38;2;51;102;0;1           # Code (interpreted) (Tool Command Language)
+.r                    38;2;0;255;153             # Code (interpreted) (R)
+.R                    38;2;0;255;153             # Code (interpreted) (R)
+.gs                   38;2;51;204;255             # GrADS
+.clj                  38;2;0;204;51             # Clojure
+.cljs                 38;2;0;204;51             # Clojure
+.cljc                 38;2;0;204;51             # Clojure
+.cljw                 38;2;0;204;51             # Clojure Gorilla notebook
+.scala                38;2;0;204;51             # Scala
+.sc                   38;2;0;204;51             # Scala
+.dart                 38;2;0;255;255             # Dart
+.asm                  38;2;51;204;255             # ASM
+.cl                   38;2;51;204;255             # LISP
+.ml                   38;2;51;204;255             # LISP
+.lisp                 38;2;51;204;255             # LISP
+.rkt                  38;2;51;204;255             # LISP
+.el                   38;2;51;204;255             # LISP (Emacs)
+.elc                  38;2;98;98;98            # LISP (Emacs)
+.eln                  38;2;98;98;98            # LISP (Emacs)
+.lua                  38;2;51;204;255             # Code (interpreted) (Lua)
+.moon                 38;2;51;204;255             # Code (interpreted) (Moonscript)
+.c                    38;2;51;204;255             # C
+.C                    38;2;51;204;255             # C
+.h                    38;2;102;153;204            # C headers
+.H                    38;2;102;153;204            # C headers
+.tcc                  38;2;102;153;204            # C headers
+.c++                  38;2;51;204;255             # C++
+.h++                  38;2;102;153;204            # C++ headers
+.hpp                  38;2;102;153;204            # C++ headers
+.hxx                  38;2;102;153;204            # C++ headers
+.ii                   38;2;102;153;204            # C++ headers
+.M                    38;2;102;153;204            # Objective C method file
+.m                    38;2;102;153;204            # Objective C method file
+.cc                   38;2;51;204;255             # Csharp
+.cs                   38;2;51;204;255             # Csharp
+.cp                   38;2;51;204;255             # Csharp
+.cpp                  38;2;51;204;255             # Csharp
+.cxx                  38;2;51;204;255             # Csharp
+.cr                   38;2;51;204;255             # Crystal
+.go                   38;2;51;204;255             # Golang
+.f                    38;2;51;204;255             # Fortran
+.F                    38;2;51;204;255             # Fortran
+.for                  38;2;51;204;255             # Fortran
+.ftn                  38;2;51;204;255             # Fortran
+.f90                  38;2;51;204;255             # Fortran
+.F90                  38;2;51;204;255             # Fortran
+.f95                  38;2;51;204;255             # Fortran
+.F95                  38;2;51;204;255             # Fortran
+.f03                  38;2;51;204;255             # Fortran
+.F03                  38;2;51;204;255             # Fortran
+.f08                  38;2;51;204;255             # Fortran
+.F08                  38;2;51;204;255             # Fortran
+.nim                  38;2;51;204;255             # Nim
+.nimble               38;2;51;204;255             # Nim
+.s                    38;2;102;153;204            # Pascal
+.S                    38;2;102;153;204            # Pascal
+.rs                   38;2;51;204;255             # Code (compiled) (Rust)
+.scpt                 38;2;255;153;255            # AppleScript
+.swift                38;2;255;153;255            # Swift
+.sx                   38;2;51;204;255             # SimplexNumerica
+.vala                 38;2;51;204;255             # Vala
+.vapi                 38;2;51;204;255             # Vala
+.hi                   38;2;102;153;204            # Haskell
+.hs                   38;2;51;204;255             # Haskell
+.lhs                  38;2;51;204;255             # Haskell
+.agda                 38;2;51;204;255             # Agda
+.lagda                38;2;51;204;255             # Agda
+.lagda.tex            38;2;51;204;255             # Agda
+.lagda.rst            38;2;51;204;255             # Agda
+.lagda.md             38;2;51;204;255             # Agda
+.agdai                38;2;102;153;204            # Agda
+.zig                  38;2;51;204;255             # Zig
+.v                    38;2;51;204;255             # V
+.rego                 38;2;204;153;0            # Code (Rego)
+.pyc                  38;2;88;88;88            # Code (Python)
+.tf                   38;2;204;51;102            # Code (Terraform)
+.tfstate              38;2;204;51;102            # Code (Terraform)
+.tfvars               38;2;204;51;102            # Code (Terraform)
+.http                 38;2;102;0;102;1           # Request (Web)
+.eml                  38;2;102;0;102;1           # Email (Web)
+.css                  38;2;102;102;255;1          # Styling (Web)
+.less                 38;2;102;102;255;1          # Styling (Web)
+.sass                 38;2;102;102;255;1          # Styling (Web)
+.scss                 38;2;102;102;255;1          # Styling (Web)
+.htm                  38;2;153;0;51;1          # Styling (Web)
+.html                 38;2;153;0;51;1          # Markup (Web)
+.jhtm                 38;2;153;0;51;1          # Markup (Web)
+.mht                  38;2;153;0;51;1          # Markup (Web)
+.mustache             38;2;153;51;255;1          # Templating (Web)
+.ejs                  38;2;153;51;255;1          # Templating (Web)
+.pug                  38;2;153;51;255;1          # Templating (Web)
+.svelte               38;2;153;51;255;1          # Templating (Web)
+.vue                  38;2;153;51;255;1          # Templating (Web)
+.astro                38;2;153;51;255;1          # Templating (Web)
+.js                   38;2;51;153;204;1          # Javascript
+.jsx                  38;2;51;153;204;1          # Javascript eXtended
+.ts                   38;2;51;153;204;1          # Typescript
+.tsx                  38;2;51;153;204;1          # Typescript eXtended
+.mjs                  38;2;51;153;204;1          # ECMAScript
+.cjs                  38;2;51;153;204;1          # CommonJS
+.coffee               38;2;51;204;153;1          # Java
+.java                 38;2;51;204;153;1          # Java
+.jsm                  38;2;51;204;153;1          # Java
+.jsp                  38;2;51;204;153;1          # Java
+.php                  38;2;51;204;255             # php
+.ctp                  38;2;51;204;255             # php (CakePHP)
+.twig                 38;2;51;204;255             # php (Twig)
+.vb                   38;2;51;204;255             # VBA
+.vba                  38;2;51;204;255             # VBA
+.vbs                  38;2;51;204;255             # VBA
+*Containerfile        38;2;153;255;51            # Build process # Containers
+.containerignore      38;2;88;88;88            # Build process # Containers
+*Dockerfile           38;2;153;255;51            # Build process (Docker)
+.dockerignore         38;2;88;88;88            # Build process (Docker)
+*Makefile             38;2;153;255;51            # Build process (Make)
+*MANIFEST             38;2;118;118;118            # Build process (Make)
+*pm_to_blib           38;2;88;88;88            # Build process (Perl)
+.nix                  38;2;153;255;51            # Functional configuration
+.dhall                38;2;204;153;0            # Functional configuration
+.rake                 38;2;153;255;51            # Build process (Ruby)
+.am                   38;2;108;108;108            # Build process (Automake)
+.in                   38;2;108;108;108            # Build process (Automake)
+.hin                  38;2;108;108;108            # Build process (Automake)
+.scan                 38;2;108;108;108            # Build process (Automake)
+.m4                   38;2;108;108;108            # Build process (Automake)
+.old                  38;2;108;108;108            # Build process (Automake)
+.out                  38;2;108;108;108            # Build process (Automake)
+.SKIP                 38;2;128;128;128            # Build process (Automake)
+.diff                 48;5;197;38;2;8;8;8   # Patch files
+.patch                48;5;197;38;2;8;8;8;1 # Patch files
+.bmp                  38;2;102;51;153             # Graphics
+.dicom                38;2;102;51;153             # Graphics
+.tiff                 38;2;102;51;153             # Graphics
+.tif                  38;2;102;51;153             # Graphics
+.TIFF                 38;2;102;51;153             # Graphics
+.cdr                  38;2;102;51;153             # Graphics
+.flif                 38;2;102;51;153             # Graphics
+.gif                  38;2;102;51;153             # Graphics
+.icns                 38;2;102;51;153             # Graphics
+.ico                  38;2;102;51;153             # Graphics
+.jpeg                 38;2;102;51;153             # Graphics
+.JPG                  38;2;102;51;153             # Graphics
+.jpg                  38;2;102;51;153             # Graphics
+.jxl                  38;2;102;51;153             # Graphics
+.nth                  38;2;102;51;153             # Graphics
+.png                  38;2;102;51;153             # Graphics
+.psd                  38;2;102;51;153             # Graphics
+.pxd                  38;2;102;51;153             # Graphics
+.pxm                  38;2;102;51;153             # Graphics
+.xpm                  38;2;102;51;153             # Graphics
+.webp                 38;2;102;51;153             # Graphics
+.ai                   38;2;102;51;255             # Graphics (Vector)
+.eps                  38;2;102;51;255             # Graphics (Vector)
+.epsf                 38;2;102;51;255             # Graphics (Vector)
+.drw                  38;2;102;51;255             # Graphics (Vector)
+.ps                   38;2;102;51;255             # Graphics (Vector)
+.svg                  38;2;102;51;255             # Graphics (Vector)
+.avi                  38;2;102;204;102            # Video
+.divx                 38;2;102;204;102            # Video
+.IFO                  38;2;102;204;102            # Video
+.m2v                  38;2;102;204;102            # Video
+.m4v                  38;2;102;204;102            # Video
+.mkv                  38;2;102;204;102            # Video
+.MOV                  38;2;102;204;102            # Video
+.mov                  38;2;102;204;102            # Video
+.mp4                  38;2;102;204;102            # Video
+.mpeg                 38;2;102;204;102            # Video
+.mpg                  38;2;102;204;102            # Video
+.ogm                  38;2;102;204;102            # Video
+.rmvb                 38;2;102;204;102            # Video
+.sample               38;2;102;204;102            # Video
+.wmv                  38;2;102;204;102            # Video
+.3g2                  38;2;102;204;153            # Video (mobile/streaming)
+.3gp                  38;2;102;204;153            # Video (mobile/streaming)
+.gp3                  38;2;102;204;153            # Video (mobile/streaming)
+.webm                 38;2;102;204;153            # Video (mobile/streaming)
+.gp4                  38;2;102;204;153            # Video (mobile/streaming)
+.asf                  38;2;102;204;153            # Video (mobile/streaming)
+.flv                  38;2;102;204;153            # Video (mobile/streaming)
+.ogv                  38;2;102;204;153            # Video (mobile/streaming)
+.f4v                  38;2;102;204;153            # Video (mobile/streaming)
+.VOB                  38;2;102;204;153;1          # Video (lossless)
+.vob                  38;2;102;204;153;1          # Video (lossless)
+.ass                  38;2;102;204;255            # Subtitles
+.srt                  38;2;102;204;255            # Subtitles
+.ssa                  38;2;102;204;255            # Subtitles
+.sub                  38;2;102;204;255            # Subtitles
+.sup                  38;2;102;204;255            # Subtitles
+.vtt                  38;2;102;204;255            # Subtitles
+.3ga                  38;2;153;102;51;1          # Audio (lossy)
+.S3M                  38;2;153;102;51;1          # Audio (lossy)
+.aac                  38;2;153;102;51;1          # Audio (lossy)
+.amr                  38;2;153;102;51;1          # Audio (lossy)
+.au                   38;2;153;102;51;1          # Audio (lossy)
+.caf                  38;2;153;102;51;1          # Audio (lossy)
+.dat                  38;2;153;102;51;1          # Audio (lossy)
+.dts                  38;2;153;102;51;1          # Audio (lossy)
+.fcm                  38;2;153;102;51;1          # Audio (lossy)
+.m4a                  38;2;153;102;51;1          # Audio (lossy)
+.mod                  38;2;153;102;51;1          # Audio (lossy)
+.mp3                  38;2;153;102;51;1          # Audio (lossy)
+.mp4a                 38;2;153;102;51;1          # Audio (lossy)
+.oga                  38;2;153;102;51;1          # Audio (lossy)
+.ogg                  38;2;153;102;51;1          # Audio (lossy)
+.opus                 38;2;153;102;51;1          # Audio (lossy)
+.s3m                  38;2;153;102;51;1          # Audio (lossy)
+.sid                  38;2;153;102;51;1          # Audio (lossy)
+.wma                  38;2;153;102;51;1          # Audio (lossy)
+.ape                  38;2;153;102;0;1          # Audio (lossless)
+.aiff                 38;2;153;102;0;1          # Audio (lossless)
+.cda                  38;2;153;102;0;1          # Audio (lossless)
+.flac                 38;2;153;102;0;1          # Audio (lossless)
+.alac                 38;2;153;102;0;1          # Audio (lossless)
+.mid                  38;2;153;102;0;1          # Audio (lossless)
+.midi                 38;2;153;102;0;1          # Audio (lossless)
+.pcm                  38;2;153;102;0;1          # Audio (lossless)
+.wav                  38;2;153;102;0;1          # Audio (lossless)
+.wv                   38;2;153;102;0;1          # Audio (lossless)
+.wvc                  38;2;153;102;0;1          # Audio (lossless)
+.afm                  38;2;51;102;102             # Fonts
+.fon                  38;2;51;102;102             # Fonts
+.fnt                  38;2;51;102;102             # Fonts
+.pfb                  38;2;51;102;102             # Fonts
+.pfm                  38;2;51;102;102             # Fonts
+.ttf                  38;2;51;102;102             # Fonts
+.otf                  38;2;51;102;102             # Fonts
+.woff                 38;2;51;102;102             # Fonts
+.woff2                38;2;51;102;102             # Fonts
+.PFA                  38;2;51;102;102             # Fonts
+.pfa                  38;2;51;102;102             # Fonts
+*.7z                  38;2;0;204;0             # Archives
+*.a                   38;2;0;204;0             # Archives
+*.arj                 38;2;0;204;0             # Archives
+*.br                  38;2;0;204;0             # Archives
+*.bz2                 38;2;0;204;0             # Archives
+*.cpio                38;2;0;204;0             # Archives
+*.gz                  38;2;0;204;0             # Archives
+*.lrz                 38;2;0;204;0             # Archives
+*.lz                  38;2;0;204;0             # Archives
+*.lzma                38;2;0;204;0             # Archives
+*.lzo                 38;2;0;204;0             # Archives
+*.rar                 38;2;0;204;0             # Archives
+*.s7z                 38;2;0;204;0             # Archives
+*.sz                  38;2;0;204;0             # Archives
+*.tar                 38;2;0;204;0             # Archives
+*.tbz                 38;2;0;204;0             # Archives
+*.tgz                 38;2;0;204;0             # Archives
+*.warc                38;2;0;204;0             # Archives
+*.WARC                38;2;0;204;0             # Archives
+*.xz                  38;2;0;204;0             # Archives
+*.z                   38;2;0;204;0             # Archives
+*.zip                 38;2;0;204;0             # Archives
+*.zipx                38;2;0;204;0             # Archives
+*.zoo                 38;2;0;204;0             # Archives
+*.zpaq                38;2;0;204;0             # Archives
+*.zst                 38;2;0;204;0             # Archives
+*.zstd                38;2;0;204;0             # Archives
+*.zz                  38;2;0;204;0             # Archives
+.apk                  38;2;255;153;51            # Packaged apps
+.ipa                  38;2;255;153;51            # Packaged apps
+.deb                  38;2;255;153;51            # Packaged apps
+.rpm                  38;2;255;153;51            # Packaged apps
+.jad                  38;2;255;153;51            # Packaged apps
+.jar                  38;2;255;153;51            # Packaged apps
+.ear                  38;2;255;153;51            # Packaged apps
+.war                  38;2;255;153;51            # Packaged apps
+.cab                  38;2;255;153;51            # Packaged apps
+.pak                  38;2;255;153;51            # Packaged apps
+.pk3                  38;2;255;153;51            # Packaged apps
+.vdf                  38;2;255;153;51            # Packaged apps
+.vpk                  38;2;255;153;51            # Packaged apps
+.bsp                  38;2;255;153;51            # Packaged apps
+.dmg                  38;2;255;153;51            # Packaged apps
+.crx                  38;2;255;153;51            # Packaged apps # Google Chrome extension
+.xpi                  38;2;255;153;51            # Packaged apps # Mozilla Firefox extension
+.iso                  38;2;153;0;0            # Partition images
+.img                  38;2;153;0;0            # Partition images
+.bin                  38;2;153;0;0            # Partition images
+.nrg                  38;2;153;0;0            # Partition images
+.qcow                 38;2;153;0;0            # Partition images
+.fvd                  38;2;153;0;0            # Partition images
+.sparseimage          38;2;153;0;0            # Partition images
+.toast                38;2;153;0;0            # Partition images
+.vcd                  38;2;153;0;0            # Partition images
+.vdi                  38;2;153;0;0            # Partition images
+.vhd                  38;2;153;0;0            # Partition images
+.vhdx                 38;2;153;0;0            # Partition images
+.vfd                  38;2;153;0;0            # Partition images
+.vmdk                 38;2;153;0;0            # Partition images
+.swp                  38;2;128;128;128            # Temporary files
+.swo                  38;2;128;128;128            # Temporary files
+.tmp                  38;2;128;128;128            # Temporary files
+.sassc                38;2;128;128;128            # Temporary files
+.pacnew               38;2;0;102;255             # Undo files
+.un~                  38;2;98;98;98            # Undo files
+.orig                 38;2;98;98;98            # Undo files
+.BUP                  38;2;98;98;98            # Backups
+.bak                  38;2;98;98;98            # Backups
+.o                    38;2;98;98;98            # *nix Object file (shared libraries, core dumps etc)
+*core                 38;2;98;98;98            # Linux user core dump file (from /proc/sys/kernel/core_pattern)
+.mdump                38;2;98;98;98            # Mini DuMP crash report
+.rlib                 38;2;98;98;98            # Static rust library
+.dll                  38;2;98;98;98            # dynamic linked library
+.aria2                38;2;98;98;98            # state dumps
+.dump                 38;2;98;98;98            # state dumps
+.stackdump            38;2;98;98;98            # state dumps
+.zcompdump            38;2;98;98;98            # state dumps
+.zwc                  38;2;98;98;98            # state dumps
+.part                 38;2;78;78;78            # Partial files
+.r[0-9]{0,2}          38;2;78;78;78            # Archive segments
+.zx[0-9]{0,2}         38;2;78;78;78            # Archive segments
+.z[0-9]{0,2}          38;2;78;78;78            # Archive segments
+.pid                  38;2;168;168;168            # state files
+.state                38;2;168;168;168            # state files
+*lockfile             38;2;168;168;168            # state files
+*lock                 38;2;168;168;168            # state files
+.err                  38;2;204;0;0;1          # error logs
+.error                38;2;204;0;0;1          # error logs
+.stderr               38;2;204;0;0;1          # error logs
+.pcap                 38;2;0;102;51             # tcpdump / network traffic capture
+.cap                  38;2;0;102;51             # tcpdump / network traffic capture
+.dmp                  38;2;0;102;51             # tcpdump / network traffic capture
+.allow                38;2;102;204;0            # /etc/hosts
+.deny                 38;2;255;0;0            # /etc/hosts
+.service              38;2;0;204;255             # systemd
+*@.service            38;2;0;204;255             # systemd
+.socket               38;2;0;204;255             # systemd
+.swap                 38;2;0;204;255             # systemd
+.device               38;2;0;204;255             # systemd
+.mount                38;2;0;204;255             # systemd
+.automount            38;2;0;204;255             # systemd
+.target               38;2;0;204;255             # systemd
+.path                 38;2;0;204;255             # systemd
+.timer                38;2;0;204;255             # systemd
+.snapshot             38;2;0;204;255             # systemd
+.lnk                  38;2;0;153;255             # windows symlink
+.application          38;2;102;204;204            # metadata
+.cue                  38;2;102;204;204            # metadata
+.description          38;2;102;204;204            # metadata
+.directory            38;2;102;204;204            # metadata
+.m3u                  38;2;102;204;204            # metadata
+.m3u8                 38;2;102;204;204            # metadata
+.md5                  38;2;102;204;204            # metadata
+.properties           38;2;102;204;204            # metadata
+.sfv                  38;2;102;204;204            # metadata
+.theme                38;2;102;204;204            # metadata
+.torrent              38;2;102;204;204            # metadata
+.urlview              38;2;102;204;204            # metadata
+.webloc               38;2;102;204;204            # metadata
+.asc                  38;2;204;255;102;3          # Encrypted data
+.bfe                  38;2;204;255;102;3          # Encrypted data
+.enc                  38;2;204;255;102;3          # Encrypted data
+.gpg                  38;2;204;255;102;3          # Encrypted data
+.signature            38;2;204;255;102;3          # Encrypted data
+.sig                  38;2;204;255;102;3          # Encrypted data
+.p12                  38;2;204;255;102;3          # Encrypted data
+.pem                  38;2;204;255;102;3          # Encrypted data
+.pgp                  38;2;204;255;102;3          # Encrypted data
+.p7s                  38;2;204;255;102;3          # Encrypted data
+*id_dsa               38;2;204;255;102;3          # Encrypted data
+*id_rsa               38;2;204;255;102;3          # Encrypted data
+*id_ecdsa             38;2;204;255;102;3          # Encrypted data
+*id_ed25519           38;2;204;255;102;3          # Encrypted data
+.32x                  38;2;255;102;255            # Game console emulation
+.cdi                  38;2;255;102;255            # Game console emulation
+.fm2                  38;2;255;102;255            # Game console emulation
+.rom                  38;2;255;102;255            # Game console emulation
+.sav                  38;2;255;102;255            # Game console emulation
+.st                   38;2;255;102;255            # Game console emulation
+.a00                  38;2;255;102;255            # Game console emulation # Atari
+.a52                  38;2;255;102;255            # Game console emulation # Atari
+.A64                  38;2;255;102;255            # Game console emulation # Atari
+.a64                  38;2;255;102;255            # Game console emulation # Atari
+.a78                  38;2;255;102;255            # Game console emulation # Atari
+.adf                  38;2;255;102;255            # Game console emulation # Atari
+.atr                  38;2;255;102;255            # Game console emulation # Atari
+.gb                   38;2;255;102;255            # Game console emulation # Nintendo
+.gba                  38;2;255;102;255            # Game console emulation # Nintendo
+.gbc                  38;2;255;102;255            # Game console emulation # Nintendo
+.gel                  38;2;255;102;255            # Game console emulation # Nintendo
+.gg                   38;2;255;102;255            # Game console emulation # Nintendo
+.ggl                  38;2;255;102;255            # Game console emulation # Nintendo
+.ipk                  38;2;255;102;255            # Game console emulation # Nintendo DS Packed Images
+.j64                  38;2;255;102;255            # Game console emulation # Nintendo
+.nds                  38;2;255;102;255            # Game console emulation # Nintendo
+.nes                  38;2;255;102;255            # Game console emulation # Nintendo NES
+.sms                  38;2;255;102;255            # Sega
+.8xp                  38;2;102;255;153            # Texas Instruments Calculator files
+.8eu                  38;2;102;255;153            # Texas Instruments Calculator files
+.82p                  38;2;102;255;153            # Texas Instruments Calculator files
+.83p                  38;2;102;255;153            # Texas Instruments Calculator files
+.8xe                  38;2;102;255;153            # Texas Instruments Calculator files
+.stl                  38;2;255;153;102            # 3D printing
+.dwg                  38;2;255;153;102            # 3D printing
+.ply                  38;2;255;153;102            # 3D printing
+.wrl                  38;2;255;153;102            # 3D printing
+.vert                 38;2;153;102;0            # SPIR-V shaders
+.comp                 38;2;153;102;0            # SPIR-V shaders
+.frag                 38;2;153;102;0            # SPIR-V shaders
+.spv                  38;2;255;153;153            # SPIR-V compiled shaders
+.wgsl                 38;2;102;51;153             # WGSL shaders
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# unknown / weirdos
+.xib                  38;2;255;102;0None
+.iml                  38;2;204;51;0            # AppCode files
+
+.DS_Store             38;2;78;78;78            # macOS
+.localized            38;2;78;78;78            # macOS
+.CFUserTextEncoding   38;2;78;78;78            # macOS
+*CodeResources        38;2;78;78;78            # macOS code signing apps
+*PkgInfo              38;2;78;78;78            # macOS app bundle id
+.nib                  38;2;51;0;255             # macOS UI
+.car                  38;2;51;0;255             # macOS asset catalog
+.dylib                38;2;98;98;98            # macOS shared lib
+.entitlements         1                   # Xcode files
+.pbxproj              1                   # Xcode files
+.strings              1                   # Xcode files
+.storyboard           38;2;255;0;0            # Xcode files
+.xcconfig             1                   # Xcode files
+.xcsettings           1                   # Xcode files
+.xcuserstate          1                   # Xcode files
+.xcworkspacedata      1                   # Xcode files
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# unsorted
+.pot                  38;2;0;0;0None
+.pcb                  38;2;0;0;0None
+.mm                   38;2;0;0;0None
+.gbr                  38;2;0;0;0None
+.scm                  38;2;0;0;0None
+.xcf                  38;2;0;0;0None
+.spl                  38;2;0;0;0None
+.Rproj                38;2;0;0;0None
+.sis                  38;2;0;0;0None
+.1p                   38;2;0;0;0None
+.3p                   38;2;0;0;0None
+.cnc                  38;2;0;0;0None
+.def                  38;2;0;0;0None
+.ex                   38;2;0;0;0None
+.example              38;2;0;0;0None
+.feature              38;2;0;0;0None
+.ger                  38;2;0;0;0None
+.ics                  38;2;0;0;0              # calendar information
+.map                  38;2;0;0;0None
+.mf                   38;2;0;0;0None
+.mfasl                38;2;0;0;0None
+.mi                   38;2;0;0;0None
+.mtx                  38;2;0;0;0None
+.pc                   38;2;0;0;0None
+.pi                   38;2;0;0;0None
+.plt                  38;2;0;0;0None
+.rdf                  38;2;0;0;0None
+.ru                   38;2;0;0;0None
+.sch                  38;2;0;0;0None
+.sty                  38;2;0;0;0None
+.sug                  38;2;0;0;0None
+.tdy                  38;2;0;0;0None
+.tfm                  38;2;0;0;0None
+.tfnt                 38;2;0;0;0None
+.tg                   38;2;0;0;0None
+.vcard                38;2;0;0;0              # contact information
+.vcf                  38;2;0;0;0              # contact information
+.xln                  38;2;0;0;0None
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# termcap
+TERM ansiNone
+TERM color-xtermNone
+TERM con132x25None
+TERM con132x30None
+TERM con132x43None
+TERM con132x60None
+TERM con80x25None
+TERM con80x28None
+TERM con80x30None
+TERM con80x43None
+TERM con80x50None
+TERM con80x60None
+TERM cons25None
+TERM consoleNone
+TERM cygwinNone
+TERM dttermNone
+TERM EtermNone
+TERM eterm-colorNone
+TERM gnomeNone
+TERM gnome-256colorNone
+TERM jfbtermNone
+TERM konsoleNone
+TERM ktermNone
+TERM linuxNone
+TERM linux-cNone
+TERM mach-colorNone
+TERM mltermNone
+TERM puttyNone
+TERM rxvtNone
+TERM rxvt-256colorNone
+TERM rxvt-cygwinNone
+TERM rxvt-cygwin-nativeNone
+TERM rxvt-unicodeNone
+TERM rxvt-unicode-256colorNone
+TERM rxvt-unicode256None
+TERM screenNone
+TERM screen-256colorNone
+TERM screen-256color-bceNone
+TERM screen-bceNone
+TERM screen-wNone
+TERM screen.linuxNone
+TERM screen.rxvtNone
+TERM terminatorNone
+TERM tmux-256colorNone
+TERM vt100None
+TERM xtermNone
+TERM xterm-16colorNone
+TERM xterm-256colorNone
+TERM xterm-88colorNone
+TERM xterm-colorNone
+TERM xterm-debianNone
+TERM xterm-kittyNone
+TERM weztermNone

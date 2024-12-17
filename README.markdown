@@ -2,7 +2,7 @@
 
 ![Build](https://github.com/trapd00r/LS_COLORS/actions/workflows/build.yaml/badge.svg)
 
-:information_source: This is a fork of [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS). It adds the `ansi_256_to_rgb.py` script and a GitHub action that automatically generates `LS_COLORS_TRUE` from `LS_COLORS`. True colours (24bit encoding) may be preferred for modern terminal emulators that support 24bit colours.
+:information_source: This is a fork of [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS). It adds the [`ansi_256_to_rgb.py`](https://github.com/alberti42/LS_COLORS_TRUE_COLORS/blob/master/ansi_256_to_rgb.py) script and a GitHub action that automatically generates `LS_COLORS_TRUE` from `LS_COLORS`. True colours (24bit encoding) may be preferred for modern terminal emulators that support 24bit colours.
 
 <!-- mdformat-toc start --slug=github --no-anchors --maxlevel=3 --minlevel=1 -->
 

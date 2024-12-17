@@ -1,4 +1,4 @@
-# LS_COLORS
+# LS_COLORS (with TRUE COLORS support)
 
 ![Build](https://github.com/trapd00r/LS_COLORS/actions/workflows/build.yaml/badge.svg)
 
